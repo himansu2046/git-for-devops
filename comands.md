@@ -1,61 +1,98 @@
-# Git Commands
+# **Git Commands**
 
-## 1. Initializing a Repository
-git init
+## **1. Repository Initialization**
+Set up a new Git repository to start tracking changes.
 
-## 2. Checking the Current Directory
-pwd
+- **Initializing a Repository:**  
+  `git init`  
+  *Creates a new Git repository in the current directory.*
 
-## 3. Creating Files
-touch <file_name>
+## **2. File and Directory Management**
+Manage files and directories in the repository.
 
-## 4. Listing Files in a Directory
-ls
+- **Creating Files:**  
+  `touch <file_name>`  
+  *Creates a new file with the specified name.*
 
-## 5. Adding Files to Staging Area
-git add <file_name>
+- **Removing Files from the Working Directory:**  
+  `rm <file_name>`  
+  *Deletes the specified file from the working directory.*
 
-## 6. Checking the Status of the Repository
-git status
+- **Removing a Directory:**  
+  `rm -r <directory_name>`  
+  *Recursively deletes the specified directory and its contents.*
 
-## 7. Removing Files from the Staging Area (Unstage)
-git rm --cached <file_name>
+- **Listing Files in a Directory:**  
+  `ls`  
+  *Displays the files and directories in the current directory.*
 
-## 8. Committing Changes
-git commit -m "commit message"
+- **Viewing File Content:**  
+  `vim <file_name>`  
+  *Opens the specified file in the Vim text editor.*
 
-## 9. Restoring Files
-git restore <file_name>
+## **3. Staging and Committing Changes**
+Stage and commit your changes to the repository.
 
-## 10. Removing Files from the Working Directory
-rm <file_name>
+- **Adding Files to Staging Area:**  
+  `git add <file_name>`  
+  *Adds the specified file to the staging area for the next commit.*
 
-## 11. Creating a New Branch
-git checkout -b <branch_name>
+- **Adding All Files to Staging Area:**  
+  `git add .`  
+  *Adds all changes in the current directory to the staging area.*
 
-## 12. Switching Branches
-git checkout <branch_name>
+- **Removing Files from the Staging Area (Unstage):**  
+  `git rm --cached <file_name>`  
+  *Removes the specified file from the staging area without deleting it from the working directory.*
 
-## 13. Checking Git Log
-git log
+- **Committing Changes:**  
+  `git commit -m "commit message"`  
+  *Records changes in the repository with a descriptive commit message.*
 
-## 14. Checking Git Log (Oneline View)
-git log --oneline
+## **4. Repository Status and Log**
+Check the current status and history of the repository.
 
-## 15. Configuring Git Username
-git config --global user.name "your_username"
+- **Checking the Status of the Repository:**  
+  `git status`  
+  *Displays the current status of the working directory and staging area.*
 
-## 16. Configuring Git Email
-git config --global user.email "your_email@example.com"
+- **Checking Git Log:**  
+  `git log`  
+  *Shows the commit history for the repository.*
 
-## 17. Removing a Directory
-rm -r <directory_name>
+- **Checking Git Log (Oneline View):**  
+  `git log --oneline`  
+  *Displays a compact view of the commit history.*
 
-## 18. Viewing Branches
-git branch
+## **5. Branch Management**
+Manage branches in the repository.
 
-## 19. Adding All Files to Staging Area
-git add .
+- **Creating a New Branch:**  
+  `git checkout -b <branch_name>`  
+  *Creates a new branch and switches to it immediately.*
 
-## 20. Viewing File Content
-vim <file_name>
+- **Switching Branches:**  
+  `git checkout <branch_name>`  
+  *Switches to the specified branch in the repository.*
+
+- **Viewing Branches:**  
+  `git branch`  
+  *Lists all branches in the repository and indicates the current branch.*
+
+## **6. Configuration**
+Configure user information for the Git repository.
+
+- **Configuring Git Username:**  
+  `git config --global user.name "your_username"`  
+  *Sets the username for Git commits globally.*
+
+- **Configuring Git Email:**  
+  `git config --global user.email "your_email@example.com"`  
+  *Sets the email address for Git commits globally.*
+
+## **7. Restoring Files**
+Restore files to their previous state.
+
+- **Restoring Files:**  
+  `git restore <file_name>`  
+  *Restores the specified file to its last committed state.*
