@@ -96,3 +96,11 @@ Restore files to their previous state.
 - **Restoring Files:**  
   `git restore <file_name>`  
   *Restores the specified file to its last committed state.*
+
+
+  ##.8 Check the remote url for the git hub
+    git remote -v
+  pull the file from remote to local
+    git pull origin <branchname>
+    push the file from local to remote
+    git push
