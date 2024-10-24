@@ -1,4 +1,4 @@
-# **Git Commands**
+G# **Git Commands**
 
 ## **1. Repository Initialization**
 Set up a new Git repository to start tracking changes.
@@ -97,9 +97,9 @@ Restore files to their previous state.
   `git restore <file_name>`  
   *Restores the specified file to its last committed state.*
 
-
-  ##.8 Check the remote url for the git hub
+## 8 Check the remote url for the git hub
     git remote -v
+## Push and pull repositorys in git
   pull the file from remote to local
     git pull origin <branchname>
     push the file from local to remote
